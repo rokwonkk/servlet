@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--<a> doget 으로감 무조건-->
+
+<!-- method default는 get이다. -->
+<form action="hello" method="get">
+    <input type="text" name="memo" placeholder="memo get">
+    <input type="submit" value="Hello Servlet get">
+</form>
+<br/>
+<!-- 보안을 요하는 정보는 post써주는게 마따 -->
+<form action="hello" method="post">
+    <input type="text" name="memo" placeholder="memo post">
+    <input type="submit" value="Hello Servlet post">
+</form>
+
+<!--location.href doget 으로감 무조건-->
+
+</body>
+</html>

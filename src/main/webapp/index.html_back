@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+        Servlet = Server + Applet
+
+        Java(Html)
+
+        Get, Post
+-->
+<a href="hello">Hello Servlet</a>
+<br/><br/>
+
+<form action="hello">
+    <input type="submit" value="Hello Servlet">
+</form>
+<br/><br/>
+
+<button type="button" onclick="func()">Hello Servlet</button>
+<script type="text/javascript">
+    function func() {
+        location.href = "hello";
+    }
+</script>
+
+</body>
+</html>

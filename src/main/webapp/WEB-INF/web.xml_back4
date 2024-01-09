@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- /hello pattern으로 해당 클래스를 등록
+            <servlet>, <servlet-mapping> 의 servlet-name은 동일해야하고
+            url-pattern에 들어가면 cservlet-class로 이동하게 만들어 놓음.
+    -->
+
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>org.servlet.HelloServlet4</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+</web-app>
