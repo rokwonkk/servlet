@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="hello">Hello Servlet으로 이동</a>
+
+<!--
+        저장공간
+        Object를 저장할 수 있는 공간
+
+        server  :
+                    session - 저장공간, Object를 저장, 기한을 설정
+                                (setAttribute("key", Object), getAttribute("key"))
+                                key 값은 절대 한글금지
+                    cache   - 임시 저장공간
+
+        client  :
+                    cookie  - 저장공간, String을 저장, id저장
+-->
+</form>
+
+</body>
+</html>

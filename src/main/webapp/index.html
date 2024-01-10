@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        p {
+            line-height: 1.5;
+        }
+
+        p.ps20 input {
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<form action="hello">
+<h1>설문 조사</h1>
+<form action="review">
+    <p>
+        이름 : <input type="text" name="name" size="20" placeholder="이름을 기입">
+    </p>
+    <hr/>
 
-    이름: <input type="text" name="name"><br/>
-    나이: <input type="text" name="age"><br/>
-    신장: <input type="text" name="height"><br/><br/>
+    <p class="ps20">
+        <b>질문(1)</b><br/>
+        영어회화에 관심이 있습니까?<br/><br/>
+        <label>
+            <input type="radio" name="eng" value="y" checked>예
+        </label>
+        <label>
+            <input type="radio" name="eng" value="nothing">둘 다 말할 수 없음
+        </label>
+        <label>
+            <input type="radio" name="eng" value="n">아니요
+        </label>
+    </p>
+    <hr/>
 
-    <input type="submit" value="전송">
+    <p class="ps20">
+        <b>질문(2)</b><br/>
+        영어 이외에 관심이 있는 어학이 있으면 선택해 주세요(복수 답변 가능)<br/><br/>
+
+        <label><input type="checkbox" name="anyLang" value="dog">독일어</label>
+        <label><input type="checkbox" name="anyLang" value="french">프랑스어</label>
+        <label><input type="checkbox" name="anyLang" value="italy">이탈리아어</label>
+        <label><input type="checkbox" name="anyLang" value="spain">스페인어</label>
+        <label> <input type="checkbox" name="anyLang" value="jap">일본어</label>
+    </p>
+    <hr/>
+
+    <p>
+        <b>질문(3)</b><br/>
+        영어 수업에 대한 의견<br/>
+        <textarea name="comment" cols="40" rows="6" placeholder="의견을 기입"></textarea>
+    </p>
+    <hr/>
+
+    <p>
+        <b>질문(4)</b><br/>
+        나이를 선택하세요
+
+        <select name="age">
+            <option>아래에서 선택</option>
+            <option value="10">10~19세</option>
+            <option value="20">20~29세</option>
+            <option value="30">30~39세</option>
+            <option value="40">40~49세</option>
+            <option value="50">50세 이상</option>
+        </select>
+    </p>
+    <hr/>
+
+    <p>
+        <input type="submit" value="제출">
+        <input type="reset" value="초기화">
+    </p>
+
 </form>
-
 </body>
 </html>
